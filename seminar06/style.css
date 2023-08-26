@@ -18,6 +18,11 @@ body {
     gap: 32px;
 }
 
+.center {
+    padding-left: calc(50% - 573px);
+    padding-right: calc(50% - 573px);
+}
+
 .menu_link {
     text-decoration: none;
     color: #FFF;
@@ -46,7 +51,7 @@ body {
 }
 
 .title {
-    width: 604px;
+    max-width: 604px;
     color: #FFF;
     margin-top: 10px;
     font-size: 55px;
@@ -56,7 +61,7 @@ body {
 }
 
 .text {
-    width: 558px;
+    max-width: 558px;
     color: #FFF;
     margin-top: 40px;
     font-size: 18px;
@@ -95,6 +100,10 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.img_top_content {
+    max-width: 414px;
 }
 
 .top_logo {
@@ -139,8 +148,7 @@ body {
 }
 
 .top_info_ai {
-    max-width: 500px;
-    
+    max-width: 500px;    
 }
 
 .btn_ai {
@@ -158,8 +166,6 @@ body {
 
 .top_item {
     display: flex;
-    /* display: grid;
-    justify-content: center; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -190,6 +196,38 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 160%
+}
+
+.img_item {
+    width: 98px;
+}
+
+.img_item_big {
+    width: 306px;
+}
+
+.top_middle_about {
+
+}
+
+.sub_title_about {
+    width: 548px;
+    margin-bottom: 40px;
+    color: var(--ffffff, #FFF);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.title_about {
+    width: 460px;
+    margin-bottom: 20px;
+    color: var(--ffffff, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
 }
 
 .footer {
@@ -223,4 +261,39 @@ body {
     font-weight: 100;
     line-height: normal;
     width: 261px;
+}
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 344px);
+        padding-right: calc(50% - 344px);
+    }
+    
+    .sub_title {
+        font-size: 16px;
+    }
+    
+    .title {
+        font-size: 48px;
+    }
+    
+    .top_logo {
+        gap: 32px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .top_grid {
+        gap: 32px;
+        grid-template-columns: repeat(1, 362px);
+    }
+
+    .img_item_big {
+        width: 98px;
+    }
+       
+    .big_item {
+        grid-column: 1 span;
+        grid-row: 1 span;
+    }       
 }

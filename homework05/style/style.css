@@ -121,6 +121,11 @@ a {
     border-radius: 50px;
     background: #F25822;
     padding: 16px 35px;
+    transition: color 0.4s linear;
+}
+
+.btn1:hover {
+    background: #c53c0a;
 }
 
 .btn2 {
@@ -130,8 +135,14 @@ a {
     font-weight: 400;
     line-height: normal;
     border: none;
+    border-radius: 50px;
     background: none;
     padding: 16px 35px;
+    transition: color 0.4s linear;
+}
+
+.btn2:hover {
+    background: #383736;
 }
 
 /*логи*/
@@ -255,14 +266,6 @@ a {
     text-align: center;
 }
 
-.btn3 {
-    color: #fff;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border-radius: 50px;
-    background: #F25822;
-    padding: 16px 35px;
+.btn-padding {
     margin-top: 39px;
 }
