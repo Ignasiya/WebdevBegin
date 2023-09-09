@@ -1,0 +1,13 @@
+.text-color {
+    color: red;
+}
+
+.center {
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
+}
+
+.box-product {
+    gap: 24px;
+    flex-wrap: wrap;
+}
